@@ -7,6 +7,7 @@ Notes: This script is for training a language model using supervised fine-tuning
 '''
 
 import os
+import sys
 import platform
 import argparse
 import time
@@ -23,6 +24,7 @@ from models.ModelConfig import ModelConfig
 from models.Transformer import Transformer
 from utlis.dataset import SFTDataset
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 #import swanlab
 
 # 忽略警告

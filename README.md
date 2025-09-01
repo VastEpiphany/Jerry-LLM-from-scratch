@@ -60,12 +60,32 @@ Some of the data such as seq_monkey data and pth file are not included since the
 
 - Pretraining: Might be a "little bit" of too diffcult for my machine to do that.
 
-- SFT: It has 2261913 iters while the whole training process takes about 3700min on a single Nvidia RTX 2080Ti (22GB VRAM) GPU.
+- SFT: It has 2261913 iters while the whole training process takes about 3700min on a single Nvidia RTX 2080Ti (22GB VRAM) GPU. The log is shown as follows:
+
+    ![](./imgs/SFT_log.png)
+
+## Demonstration
+The test result is shown as follows:
+
+```
+pretrain_prompt_datas = [
+        '<|im_start|>人工智能是',
+        '<|im_start|>大语言模型是',
+        '<|im_start|>华南理工大学是',
+    ]
+```
+
+![](./imgs/test.png)
+
+From the result we can see that the output text can be regard as natural language, but there's many mistakes since the params of the LLM is quite small.
+
+(Unbengable: SCUT 🤣🤣🤣)
 
 ## TODO
 
 - Make sure the whole structure is fully understand by yourself.
 - Understand that a slight difference between the model and ckpt would make an LLM become mild/wild...
+- The execution of the main Pretrain/SFT code has some problems with the path of the dir... (Since I moved them to the srcs folder. Can be temporarily solved by running `python -m srcs.SFT`)
 
 ## Acknowledgement & Reference
 

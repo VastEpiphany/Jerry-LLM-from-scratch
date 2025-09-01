@@ -94,9 +94,9 @@ if __name__ == "__main__":
     print("------------------- Pretrain Sample ------------------- \n")
 
     pretrain_prompt_datas = [
-        '<|im_start|>北京大学是',
-        '<|im_start|>中国矿业大学（北京）地球科学与测绘工程学院',
-        '<|im_start|>华南理工大学未来技术学院是',
+        '<|im_start|>人工智能是',
+        '<|im_start|>大语言模型是',
+        '<|im_start|>华南理工大学是',
     ]
 
     generator = TextGenerator(checkpoint='./output_models/ckpt/pretrain_1024_18_6144.pth')  # 初始化生成器
