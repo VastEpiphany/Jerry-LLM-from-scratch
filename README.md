@@ -77,7 +77,7 @@ pretrain_prompt_datas = [
 
 ![](./imgs/test.png)
 
-From the result we can see that the output text can be regard as natural language, but there's many mistakes since the params of the LLM is quite small.
+From the result we can see that the output text can be regard as natural language, but there are many mistakes since the params of the LLM is quite small.
 
 (Unbengable: SCUT 🤣🤣🤣)
 
